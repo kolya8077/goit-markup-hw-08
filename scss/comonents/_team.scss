@@ -1,0 +1,142 @@
+.team {
+  background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-primary);
+}
+
+.team__box {
+  box-sizing: border-box;
+  background-color: var(--text-secondary);
+  max-width: 450px;
+  height: 622px;
+  padding-bottom: 24px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+}
+
+.team__conteiner {
+  padding-top: 30px;
+}
+
+.team__img {
+  max-width: 450px;
+}
+
+.team__people {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.team__signature {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-secondary-lighter);
+}
+
+.team__social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  transition: hover, focus, 250ms var(--time-cubic);
+  &:hover {
+    border-radius: 50%;
+    background-color: var(--them-color);
+  }
+
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.team__social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: hover, focus, 250ms var(--time-cubic);
+
+  fill: var(--social-link-color);
+  &:hover {
+    fill: var(--text-secondary);
+    &:focus {
+      fill: var(--text-secondary);
+      background-color: var(--them-color);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .team__box {
+    max-width: 354px;
+    height: 536px;
+    margin-bottom: 0;
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  .team__img {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .team__title {
+    margin-bottom: 50px;
+  }
+
+  .team__box {
+    max-width: 270px;
+    height: 428px;
+    padding-bottom: 30px;
+    &:first-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  .team__img {
+    max-width: 270px;
+  }
+}

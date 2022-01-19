@@ -18,40 +18,59 @@
 </head>
 
 <body>
+
     <header class="header">
         <div class="conteiner header__conteiner">
-            <a href="./index.html" class="header__link-hero"><span class="header__span">Web</span> Studio</a>
-            <nav>
-                <ul class="header__main">
-                    <li class="header__list">
-                        <a href="./index.html" class="header__link ">Студия</a>
-                    </li>
-                    <li class="header__list">
-                        <a href="./portfolio.html" class="header__link active-page">Портфолио</a>
-                    </li>
-                    <li class="header__list">
-                        <a href="" class="header__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="header__contacts">
-                <li class="header__contacts-item">
-                    <a href="" class="header__contacts-link">
-                        <svg width=16px height=12px class="header__tel-mail">
-                            <use href="./images/icons.svg#icon-mail-to"> </use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="header__contacts-item">
-                    <a href="" class="header__contacts-link">
-                        <svg width=10px height=16px class="header__tel-mail">
-                            <use href="./images/icons.svg#icon-tel"> </use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            <a href="./index.html" class="header__link-hero"><span class="header__span">Web</span>Studio</a>
+            <button type="button" class="menu__button" aria-expanded="false" data-menu-open>
+                <svg width=40px height=40px aria-label="Переключатель мобильного меню">
+                    <use class="menu__icon-burger" href="./images/icons.svg#burger"></use>
+                    <use class="menu__icon-close" href="./images/icons.svg#burger-close"></use>
+                </svg>
+            </button>
+            <div class="menu" id="menu" data-menu>
+                <div class="menu__box">
+                    <nav>
+                        <ul class="header__main">
+                            <li class="header__list">
+                                <a href="./index.html" class="header__link">Студия</a>
+                            </li>
+                            <li class="header__list">
+                                <a href="./portfolio.html" class="header__link active-page">Портфолио</a>
+                            </li>
+                            <li class="header__list">
+                                <a href="" class="header__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <ul class="header__contacts">
+                            <li class="header__contacts-item">
+                                <a href="mailto:info@devstudio.com" class="header__contacts-link ">
+                                    <svg class="header__mail">
+                                        <use href="./images/icons.svg#icon-mail-to"> </use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="header__contacts-item">
+                                <a href="tel:+380961111111" class="header__contacts-link active-mail">
+                                    <svg class="header__tel">
+                                        <use href="./images/icons.svg#icon-tel"> </use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="menu__list">
+                            <li class="menu__item"> <a href="#" class="menu__link">Instagram</a> </li>
+                            <li class="menu__item"> <a href="#" class="menu__link">Twitter</a> </li>
+                            <li class="menu__item"> <a href="#" class="menu__link">Facebook</a> </li>
+                            <li class="menu__item"> <a href="#" class="menu__link">LinkedIn</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -80,7 +99,7 @@
                     <li class="card__list">
                         <a href="" class="card__link">
                             <div class="card__product">
-                                <img src="./images/card-1.jpg" class="card__img" alt="Веб-сайт" width="370">
+                                <img src="./images/card-1.jpg" class="card__img" alt="Веб-сайт">
                             </div>
                             <div class="card__tablet">
                                 <h3 class="card__title">Технокряк</h3>
@@ -91,7 +110,7 @@
                     <li class="card__list">
                         <a href="" class="card__link">
                             <div class="card__product">
-                                <img src="./images/card-2.jpg" class="card__img" alt="Веб-сайт" width="370">
+                                <img src="./images/card-2.jpg" class="card__img" alt="Веб-сайт">
                             </div>
                             <div class="card__tablet">
                                 <h3 class="card__title">Постер New Orlean vs Golden Star</h3>
@@ -102,7 +121,7 @@
                     <li class="card__list">
                         <a href="" class="card__link">
                             <div class="card__product">
-                                <img src="./images/card-3.jpg" class="card__img" alt="Веб-сайт" width="370">
+                                <img src="./images/card-3.jpg" class="card__img" alt="Веб-сайт">
                             </div>
                             <div class="card__tablet">
                                 <h3 class="card__title">Ресторан Seafood</h3>
@@ -113,7 +132,7 @@
                     <li class="card__list">
                         <a href="" class="card__link">
                             <div class="card__product">
-                                <img src="./images/card-4.jpg" class="card__img" alt="Веб-сайт" width="370">
+                                <img src="./images/card-4.jpg" class="card__img" alt="Веб-сайт">
                             </div>
                             <div class="card__tablet">
                                 <h3 class="card__title">Проект Prime</h3>
@@ -124,7 +143,7 @@
                     <li class="card__list">
                         <a href="" class="card__link">
                             <div class="card__product">
-                                <img src="./images/card-5.jpg" class="card__img" alt="Веб-сайт" width="370">
+                                <img src="./images/card-5.jpg" class="card__img" alt="Веб-сайт">
                             </div>
                             <div class="card__tablet">
                                 <h3 class="card__title">Проект Boxes</h3>
@@ -135,7 +154,7 @@
                     <li class="card__list">
                         <a href="" class="card__link">
                             <div class="card__product">
-                                <img src="./images/card-6.jpg" class="card__img" alt="Веб-сайт" width="370">
+                                <img src="./images/card-6.jpg" class="card__img" alt="Веб-сайт">
                             </div>
                             <div class="card__tablet">
                                 <h3 class="card__title">Inspiration has no Borders</h3>
@@ -146,7 +165,7 @@
                     <li class="card__list">
                         <a href="" class="card__link">
                             <div class="card__product">
-                                <img src="./images/card-7.jpg" class="card__img" alt="Веб-сайт" width="370">
+                                <img src="./images/card-7.jpg" class="card__img" alt="Веб-сайт">
                             </div>
                             <div class="card__tablet">
                                 <h3 class="card__title">Издание Limited Edition</h3>
@@ -157,7 +176,7 @@
                     <li class="card__list">
                         <a href="" class="card__link">
                             <div class="card__product">
-                                <img src="./images/card-8.jpg" class="card__img" alt="Веб-сайт" width="370">
+                                <img src="./images/card-8.jpg" class="card__img" alt="Веб-сайт">
                             </div>
                             <div class="card__tablet">
                                 <h3 class="card__title">Проект LAB</h3>
@@ -168,7 +187,7 @@
                     <li class="card__list">
                         <a href="" class="card__link">
                             <div class="card__product">
-                                <img src="./images/card-9.jpg" class="card__img" alt="Веб-сайт" width="370">
+                                <img src="./images/card-9.jpg" class="card__img" alt="Веб-сайт">
                             </div>
                             <div class="card__tablet">
                                 <h3 class="card__title list">Growing Business</h3>
@@ -244,6 +263,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

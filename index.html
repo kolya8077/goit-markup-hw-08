@@ -22,38 +22,56 @@
 <body>
     <header class="header">
         <div class="conteiner header__conteiner">
-            <a href="./index.html" class="header__link-hero"><span class="header__span">Web</span> Studio</a>
-            <nav>
-                <ul class="header__main">
-                    <li class="header__list">
-                        <a href="./index.html" class="header__link active-page">Студия</a>
-                    </li>
-                    <li class="header__list">
-                        <a href="./portfolio.html" class="header__link">Портфолио</a>
-                    </li>
-                    <li class="header__list">
-                        <a href="" class="header__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="header__contacts">
-                <li class="header__contacts-item">
-                    <a href="" class="header__contacts-link">
-                        <svg width=16px height=12px class="header__tel-mail">
-                            <use href="./images/icons.svg#icon-mail-to"> </use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="header__contacts-item">
-                    <a href="" class="header__contacts-link">
-                        <svg width=10px height=16px class="header__tel-mail">
-                            <use href="./images/icons.svg#icon-tel"> </use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            <a href="./index.html" class="header__link-hero"><span class="header__span">Web</span>Studio</a>
+            <button type="button" class="menu__button" aria-expanded="false" data-menu-open>
+                <svg width=40px height=40px aria-label="Переключатель мобильного меню">
+                    <use class="menu__icon-burger" href="./images/icons.svg#burger"></use>
+                    <use class="menu__icon-close" href="./images/icons.svg#burger-close"></use>
+                </svg>
+            </button>
+            <div class="menu" id="menu" data-menu>
+                <div class="menu__box">
+                    <nav>
+                        <ul class="header__main">
+                            <li class="header__list">
+                                <a href="./index.html" class="header__link active-page">Студия</a>
+                            </li>
+                            <li class="header__list">
+                                <a href="./portfolio.html" class="header__link">Портфолио</a>
+                            </li>
+                            <li class="header__list">
+                                <a href="" class="header__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <ul class="header__contacts">
+                            <li class="header__contacts-item">
+                                <a href="mailto:info@devstudio.com" class="header__contacts-link ">
+                                    <svg class="header__mail">
+                                        <use href="./images/icons.svg#icon-mail-to"> </use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="header__contacts-item">
+                                <a href="tel:+380961111111" class="header__contacts-link active-mail">
+                                    <svg class="header__tel">
+                                        <use href="./images/icons.svg#icon-tel"> </use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="menu__list">
+                            <li class="menu__item"> <a href="#" class="menu__link">Instagram</a> </li>
+                            <li class="menu__item"> <a href="#" class="menu__link">Twitter</a> </li>
+                            <li class="menu__item"> <a href="#" class="menu__link">Facebook</a> </li>
+                            <li class="menu__item"> <a href="#" class="menu__link">LinkedIn</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -92,7 +110,7 @@
                             </svg>
                         </label>
                         <label class="label-hero hero-input">
-                            <span class="title-lable">Комментарий</span>
+                            <span class="title-lable-comit">Комментарий</span>
                             <textarea class="textarea" name="user-msg" placeholder="Введите текст"></textarea>
                         </label>
                         <input type="checkbox" id="confirmation" class="i-confirmation">
@@ -104,7 +122,6 @@
                     </form>
                 </div>
             </div>
-
         </section>
 
         <section class="advantages">
@@ -116,9 +133,11 @@
                                 <use href="./images/icons.svg#icon-group-1"></use>
                             </svg>
                         </div>
-                        <h3 class="advantages__title">Внимание к деталям</h3>
-                        <p class="advantages__paragraph">Идейные соображения, а также начало повседневной работы по
-                            формированию позиции.</p>
+                        <div class="advantages__details">
+                            <h3 class="advantages__title">Внимание к деталям</h3>
+                            <p class="advantages__paragraph">Идейные соображения, а также начало повседневной работы по
+                                формированию позиции.</p>
+                        </div>
                     </li>
                     <li class="advantages__item">
                         <div class="advantages__img-list">
@@ -126,9 +145,11 @@
                                 <use href="./images/icons.svg#icon-group-2"></use>
                             </svg>
                         </div>
-                        <h3 class="advantages__title">Пунктуальность</h3>
-                        <p class="advantages__paragraph">Задача организации, в особенности же рамки и место обучения
-                            кадров влечет за собой.</p>
+                        <div class="advantages__details">
+                            <h3 class="advantages__title">Пунктуальность</h3>
+                            <p class="advantages__paragraph">Задача организации, в особенности же рамки и место обучения
+                                кадров влечет за собой.</p>
+                        </div>
                     </li>
                     <li class="advantages__item">
                         <div class="advantages__img-list">
@@ -136,10 +157,12 @@
                                 <use href="./images/icons.svg#icon-group-3"></use>
                             </svg>
                         </div>
-                        <h3 class="advantages__title">Планирование</h3>
-                        <p class="advantages__paragraph">Равным образом консультация с широким активом в значительной
-                            степени
-                            обуславливает.</p>
+                        <div class="advantages__details">
+                            <h3 class="advantages__title">Планирование</h3>
+                            <p class="advantages__paragraph">Равным образом консультация с широким активом в
+                                значительной
+                                степени обуславливает.</p>
+                        </div>
                     </li>
                     <li class="advantages__item">
                         <div class="advantages__img-list">
@@ -147,9 +170,11 @@
                                 <use href="./images/icons.svg#icon-group-4"></use>
                             </svg>
                         </div>
-                        <h3 class="advantages__title">Современные технологии</h3>
-                        <p class="advantages__paragraph">Значимость этих проблем настолько очевидна, что реализация
-                            плановых заданий.</p>
+                        <div class="advantages__details">
+                            <h3 class="advantages__title">Современные технологии</h3>
+                            <p class="advantages__paragraph">Значимость этих проблем настолько очевидна, что реализация
+                                плановых заданий.</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -180,12 +205,13 @@
                 </ul>
             </div>
         </section>
+
         <section class="team">
             <div class="conteiner">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__box">
-                        <img src="./images/kom-1.jpg" width="270" alt="Игорь Демьяненко">
+                        <img src="./images/kom-1.jpg" class="team__img" alt="Игорь Демьяненко">
                         <div class="team__conteiner">
                             <h3 class="team__people">Игорь Демьяненко</h3>
                             <p class="team__signature">Product Designer</p>
@@ -222,7 +248,7 @@
                         </div>
                     </li>
                     <li class="team__box">
-                        <img src="./images/kom-2.jpg" width="270" alt="Ольга Репина">
+                        <img src="./images/kom-2.jpg" class="team__img" alt="Ольга Репина">
                         <div class="team__conteiner">
                             <h3 class="team__people">Ольга Репина</h3>
                             <p class="team__signature">Frontend Developer</p>
@@ -259,7 +285,7 @@
                         </div>
                     </li>
                     <li class="team__box">
-                        <img src="./images/kom-3.jpg" width="270" alt="Николай Тарасов">
+                        <img src="./images/kom-3.jpg" class="team__img" alt="Николай Тарасов">
                         <div class="team__conteiner">
                             <h3 class="team__people">Николай Тарасов</h3>
                             <p class="team__signature">Marketing</p>
@@ -296,7 +322,7 @@
                         </div>
                     </li>
                     <li class="team__box">
-                        <img src="./images/kom-4.jpg" width="270" alt="Михаил Ермаков">
+                        <img src="./images/kom-4.jpg" class="team__img" alt="Михаил Ермаков">
                         <div class="team__conteiner">
                             <h3 class="team__people">Михаил Ермаков</h3>
                             <p class="team__signature">UI Designer</p>
@@ -386,7 +412,9 @@
                 </ul>
             </div>
         </section>
+
     </main>
+
     <footer class="footer">
         <div class="conteiner footer__box">
             <div class="contacts">
@@ -450,6 +478,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

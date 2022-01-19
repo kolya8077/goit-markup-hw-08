@@ -1,15 +1,15 @@
 //variables
-@import "./utils/_variables.scss";
+@import "./utils/variables";
 //components
 //header
-@import "./comonents/_header";
+@import "./comonents/header";
 //main
-@import "./comonents/_hero";
-@import "./comonents/_advantages";
-@import "./comonents/_working";
-@import "./comonents/_team";
-@import "./comonents/_customers";
+@import "./comonents/hero";
+@import "./comonents/advantages";
+@import "./comonents/working";
+@import "./comonents/team";
+@import "./comonents/customers";
 //portfolio
-@import "./comonents/_portfolio";
+@import "./comonents/portfolio";
 //footer
-@import "./comonents/_footer";
+@import "./comonents/footer";

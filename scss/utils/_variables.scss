@@ -1,0 +1,66 @@
+:root {
+  --them-color: #2196f3;
+  --text-primary: #212121;
+  --text-secondary: #ffffff;
+  --text-secondary-lighter: #757575;
+  --social-link-color: #afb1b8;
+
+  --primary-font: "roboto";
+  --secondary-font: "raleway";
+
+  --time-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  font-family: var(--primary-font);
+  background-color: #ffffff;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.conteiner {
+  max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    max-width: 1200px;
+  }
+}
