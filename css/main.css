@@ -410,12 +410,12 @@ address {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/bg-img.jpg);
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bg-img.jpg);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bg-img.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bg-img.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/hero/hero_tablet@1x.jpg);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/hero_tablet@1x.jpg);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/hero_tablet@1x.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/hero_tablet@1x.jpg);
   background-color: #2f303a;
-  max-width: 767px;
+  width: 100%;
   height: 400px;
   background-repeat: no-repeat;
   background-position: center;
@@ -442,6 +442,15 @@ address {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 767px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/hero/hero_tablet@2x.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/hero_tablet@2x.jpg);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/hero_tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/hero_tablet@2x.jpg);
+  }
 }
 
 .hero__title {
@@ -473,14 +482,27 @@ address {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 1199px;
+    width: 100%;
     height: 400px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/hero/hero@1x.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/hero@1x.jpg);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/hero@1x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/hero@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/hero/hero@2x.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/hero@2x.jpg);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/hero@2x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero/hero@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
+    width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -995,7 +1017,7 @@ address {
           box-sizing: border-box;
   background-color: var(--text-secondary);
   max-width: 450px;
-  height: 622px;
+  max-height: 622px;
   padding-bottom: 24px;
   -webkit-border-radius: 4px;
           border-radius: 4px;
@@ -1009,7 +1031,7 @@ address {
 }
 
 .team__img {
-  max-width: 450px;
+  width: 100%;
 }
 
 .team__people {
@@ -1120,7 +1142,7 @@ address {
             flex-wrap: wrap;
   }
   .team__box {
-    max-width: 354px;
+    width: 354px;
     height: 536px;
     margin-bottom: 0;
   }
@@ -1142,7 +1164,7 @@ address {
   }
   .team__box {
     max-width: 270px;
-    height: 428px;
+    max-height: 428px;
     padding-bottom: 30px;
   }
   .team__box:first-child {
@@ -1360,6 +1382,7 @@ address {
 
 .card__img {
   display: block;
+  width: 100%;
 }
 
 .card__tablet {
@@ -1628,6 +1651,7 @@ address {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 60px;
+  width: 100%;
 }
 
 .subscription__label {
@@ -1644,7 +1668,7 @@ address {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 450px;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -1659,7 +1683,7 @@ address {
 }
 
 .subscription__mail {
-  width: 450px;
+  width: 100%;
   height: 50px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1743,6 +1767,9 @@ address {
     -webkit-align-items: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+  .subscription {
+    width: 450px;
   }
 }
 
