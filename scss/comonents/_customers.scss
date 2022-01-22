@@ -4,7 +4,7 @@
 }
 
 .customers__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -70,6 +70,10 @@
   .customers {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+
+  .customers__title {
+    margin-bottom: 50px;
   }
 
   .customers__list {

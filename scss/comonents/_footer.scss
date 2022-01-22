@@ -28,7 +28,11 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .contacts__web {
   color: var(--them-color);
 }
@@ -189,6 +193,17 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .contacts {
+    align-items: flex-start;
+  }
+  .contacts__list {
+    align-items: flex-start;
+  }
+
+  .social {
+    align-items: flex-start;
+  }
+
   .subscription {
     display: inline-flex;
     flex-direction: row;
