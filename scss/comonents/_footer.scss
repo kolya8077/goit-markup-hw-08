@@ -193,6 +193,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .footer__box {
+    justify-content: space-between;
+  }
   .contacts {
     align-items: flex-start;
   }
@@ -209,10 +212,12 @@
     flex-direction: row;
     align-items: flex-end;
     padding-bottom: 60px;
+    width: 570px;
   }
 
   .subscription__label {
     align-items: flex-start;
+    width: 358px;
   }
   .subscription__bottom {
     margin-top: 0;

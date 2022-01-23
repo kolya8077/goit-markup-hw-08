@@ -1,11 +1,10 @@
 .hero {
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero/hero_tablet@1x.jpg);
-  background-color: #2f303a;
   width: 100%;
   height: 400px;
   background-repeat: no-repeat;
@@ -25,8 +24,8 @@
     (min-resolution: 2dppx) {
     background-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero/hero_tablet@2x.jpg);
   }
@@ -68,8 +67,8 @@
     height: 400px;
     background-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero/hero@1x.jpg);
     @media (min-device-pixel-ratio: 2),
@@ -77,8 +76,8 @@
       (min-resolution: 2dppx) {
       background-image: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.4),
-          rgba(0, 0, 0, 0.4)
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
         ),
         url(../images/hero/hero@2x.jpg);
     }
@@ -179,6 +178,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .label-hero {
   display: flex;
   flex-direction: column;
@@ -198,6 +198,13 @@
 }
 
 .title-lable {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--text-secondary-lighter);
+}
+
+.title-lable-comit {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
